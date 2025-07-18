@@ -1,67 +1,87 @@
-📊 Banking Risk Analytics Dashboard in Power BI
-Welcome to the Banking Risk Analytics Dashboard project! This repository demonstrates how a data analyst can leverage data from banking and financial services to identify risks and make data-driven decisions—ultimately helping to minimize the risk of loan defaults and improve lending strategies.
+# 🏦 Banking Risk Analytics Dashboard using Power BI
 
-🧠 Problem Statement
-Objective: Develop a basic understanding of risk analytics in the banking and financial services sector and explore how data can be utilized to reduce the risk of financial loss during customer lending.
+This project demonstrates how data analytics can be applied in the **banking and financial services** sector to gain insights into customer behavior and minimize risks, especially in **loan lending**. Using exploratory data analysis (EDA), SQL integration, and Power BI, this project builds a fully interactive **banking risk analytics dashboard**.
 
-This project focuses on exploring and analyzing real-world banking data to identify meaningful insights that help risk analysts and financial decision-makers take proactive steps.
+---
 
-📁 Project Structure
-.
-├── data/
-│   └── *.csv                 # Banking datasets used for analysis
-├── notebooks/
-│   └── EDA.ipynb             # Jupyter Notebook with full EDA process
-├── dashboard/
-│   └── PowerBI.pbix          # Power BI dashboard file
-├── README.md                 # Project documentation (this file)
+## 📌 Problem Statement
 
-🔍 Exploratory Data Analysis (EDA)
-Performed in Jupyter Notebook, the EDA involved:
+> **Objective**: Develop a basic understanding of **risk analytics** in banking and understand how data is used to **minimize the risk of losing money** while lending to customers.
 
-📌 Univariate Analysis: Distribution of key variables (e.g. loan amount, income, deposits)
+Financial institutions face significant risk when issuing loans to customers. This project uses customer-level banking data to analyze trends, detect patterns, and identify insights that can inform safer, smarter lending decisions.
 
-📌 Numerical Summary Statistics
+---
 
-📌 Bivariate Analysis: Comparison between loan status and financial behaviors
+## 🧰 Tools & Technologies Used
 
-📌 Heatmap Correlation Matrix: Understanding interrelationships among numerical features
+- **Jupyter Notebook** – For performing EDA using Python
+- **Pandas, Seaborn, Matplotlib** – For statistical analysis and data visualization
+- **MySQL** – For storing and querying structured banking data
+- **Power BI** – For building an interactive dashboard with business insights
+- **CSV Files** – As the primary data source
 
-✅ Key Insight
-Strongest positive correlation was found between:
+---
 
-Bank Deposits and Checking Accounts
+## 🧪 Exploratory Data Analysis (EDA)
 
-Bank Deposits and Foreign Currency Accounts
+The EDA was performed in **Jupyter Notebook** and included:
 
-This suggests that customers maintaining high balances in one account type often have substantial funds across multiple accounts, indicating lower credit risk.
+- 🔹 Univariate Analysis
+- 🔹 Numerical Analysis
+- 🔹 Bivariate Analysis
+- 🔹 Heatmap Correlation Matrix
+- 🔹 Data Visualizations
 
-🗄️ Data Source
-Raw CSV files containing customer-level banking information
+### 🔍 Key Insight:
 
-Connected to MySQL for structured querying and integration with Power BI
+> The strongest **positive correlation** was found between:
+>
+> - **Bank Deposits** and **Checking Accounts**
+> - **Bank Deposits** and **Foreign Currency Accounts**
+>
+> This indicates that customers who maintain high balances in one account type are likely to hold **substantial funds across multiple account types** — suggesting greater financial stability and potentially **lower lending risk**.
 
-📊 Dashboard Overview (Power BI)
-The final Power BI dashboard is structured into four pages, each focusing on different aspects of banking operations and risk:
+---
 
-🏠 Home Page: Overview of KPIs and business summary
+## 🗄️ Data Handling
 
-💸 Loan Analysis: Visual insights into loan amounts, approval rates, risk segments
+- CSV files were loaded into **Jupyter Notebook** for EDA.
+- Data was cleaned and transformed.
+- The processed data was imported into a **MySQL** database.
+- Power BI was then connected directly to the MySQL database for real-time data visualization.
 
-🏦 Deposit Analysis: Patterns in deposit types and account behavior
+---
 
-📈 Summary: Final takeaways, correlations, and customer segmentation
+## 📊 Power BI Dashboard Overview
 
-⚙️ Tools & Technologies
-📘 Jupyter Notebook – for data cleaning, EDA, and visualization
+The final dashboard in Power BI contains **four pages**:
 
-🐬 MySQL – for relational data handling and integration
+1. **🏠 Home Page**  
+   General overview of customer data and key financial indicators.
 
-📊 Power BI – for dashboard development and storytelling
+2. **💳 Loan Analysis**  
+   Insights into loan approvals, amounts, risk patterns, and borrower behavior.
 
-🐍 Python (Pandas, Matplotlib, Seaborn) – for EDA and plots
+3. **🏦 Deposit Analysis**  
+   Exploration of deposit trends, account types, and customer saving habits.
+
+4. **📈 Summary**  
+   Final observations, heatmap correlations, and business recommendations.
+
+---
 
 
+## 📈 Key Business Value
+
+- Helps the bank identify **low-risk customers** based on account behavior.
+- Reveals patterns in customer deposits and loans.
+- Provides decision-makers with a visual summary for **risk-informed lending**.
+
+---
 
 
-📊 Visualization: Histograms, box plots, correlation heatmaps, and bar charts
+## 📬 Contact
+
+If you found this project useful or want to collaborate, feel free to connect via GitHub or raise an issue in the repository.
+
+---
